@@ -216,7 +216,7 @@ pip3 install -r ~/tools/MurMurHash/requirements.txt
 # Ngrok
 curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt install ngrok
 ngrok update 
-ngrok authtoken 1dNkvI0gosEtRdLKHwEOx1JqxMB_3gyGKMUdFKem8B3oSm7WS 
+ngrok authtoken <YOUR NGROK TOKEN> 
 
 # Nikto
 apt install -y nikto
