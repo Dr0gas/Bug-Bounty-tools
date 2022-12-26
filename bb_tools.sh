@@ -362,9 +362,9 @@ echo drogas:$(cat /tmp/.u) | chpasswd
 mkdir -p /home/drogas/bounty
 
 # Variáveis de Ambiente necessárias para recon
-echo "export VT_API_KEY=e49538232058fc00631166e76460da395c870534feb78d091a961dfb63cef8db" >> ~/.bashrc
-echo "export findomain_virustotal_token=e49538232058fc00631166e76460da395c870534feb78d091a961dfb63cef8db" >> ~/.bashrc
-echo "export findomain_securitytrails_token=9T7iV57xXzea5ioL0cl0363ZyMkHqndh" >> ~/.bashrc
+echo "export VT_API_KEY='YOUR VIRUS TOTAL API KEY'" >> ~/.bashrc
+echo "export findomain_virustotal_token='<YOUR VIRUS TOTAL TOKEN>'" >> ~/.bashrc
+echo "export findomain_securitytrails_token='<YOUR SECURITY TRAILS TOKEN'" >> ~/.bashrc
 echo "export findomain_discord_webhook='<YOUR DISCORD WEEBHOOK>'" >> ~/.bashrc
 source ~/.bashrc
 
