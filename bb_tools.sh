@@ -37,8 +37,8 @@ pip3 install humanfriendly
 pip install awscli
 mkdir ~/.aws
 echo "[default]" > ~/.aws/credentials
-echo "aws_access_key_id = " >> ~/.aws/credentials
-echo "aws_secret_access_key = " >> ~/.aws/credentials
+echo "aws_access_key_id = <YOUR AWS KEY ID>" >> ~/.aws/credentials
+echo "aws_secret_access_key = <YOUR AWS SECRET>" >> ~/.aws/credentials
 echo "[default]" > ~/.aws/config
 echo "region=us-west-2" >> ~/.aws/config
 echo "output=json" >> ~/.aws/config
@@ -268,7 +268,7 @@ python3 -m pip install -r requirements.txt
 # Shodan
 easy_install shodan
 pip2 install XlsxWriter click-plugins
-shodan init I3JJqbNWm2nf05lUd0jOFxvKkkWrZPYY
+shodan init <YOUR SHODAN KEY>
 
 # SMTPTester (Python2)
 git -C ~/tools clone https://github.com/xFreed0m/SMTPTester
