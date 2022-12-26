@@ -365,7 +365,7 @@ mkdir -p /home/drogas/bounty
 echo "export VT_API_KEY=e49538232058fc00631166e76460da395c870534feb78d091a961dfb63cef8db" >> ~/.bashrc
 echo "export findomain_virustotal_token=e49538232058fc00631166e76460da395c870534feb78d091a961dfb63cef8db" >> ~/.bashrc
 echo "export findomain_securitytrails_token=9T7iV57xXzea5ioL0cl0363ZyMkHqndh" >> ~/.bashrc
-echo "export findomain_discord_webhook='https://discord.com/api/webhooks/1016486216801194065/_ktR3Ju2vkaRkOYXUpVU_AKtwSetEapUTsMD9if9HUIccuUWjSij_uA4b2Dbzcvln-dv'" >> ~/.bashrc
+echo "export findomain_discord_webhook='<YOUR DISCORD WEEBHOOK>'" >> ~/.bashrc
 source ~/.bashrc
 
 # Axiom
