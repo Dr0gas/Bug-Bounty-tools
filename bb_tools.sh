@@ -37,8 +37,8 @@ pip3 install humanfriendly
 pip install awscli
 mkdir ~/.aws
 echo "[default]" > ~/.aws/credentials
-echo "aws_access_key_id = AKIAZUTSUQUJGOGGZXOI" >> ~/.aws/credentials
-echo "aws_secret_access_key = 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" >> ~/.aws/credentials
+echo "aws_access_key_id = " >> ~/.aws/credentials
+echo "aws_secret_access_key = " >> ~/.aws/credentials
 echo "[default]" > ~/.aws/config
 echo "region=us-west-2" >> ~/.aws/config
 echo "output=json" >> ~/.aws/config
