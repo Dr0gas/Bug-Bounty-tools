@@ -11,6 +11,9 @@ mv ~/tools/AnalyticsRelationships/analyticsrelationships /usr/bin/
 # Anew
 go install github.com/tomnomnom/anew@latest
 
+# Api Guesser
+go install github.com/daffainfo/apiguesser@latest
+
 # Apktool
 apt install -y apktool 
 
