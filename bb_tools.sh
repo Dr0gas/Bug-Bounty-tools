@@ -56,7 +56,7 @@ go install github.com/glebarez/cero@latest
 # Chaos
 go install -v github.com/projectdiscovery/chaos-client/cmd/chaos@latest
 
-Concurl
+# Concurl
 go install github.com/tomnomnom/concurl@latest
 
 # Crackmapexec
@@ -252,7 +252,7 @@ apt install -y proxychains
 
 # Puredns
 go install github.com/d3mondev/puredns/v2@latest
-# Corrigir bug:
+# Fix Puredns bug:
 sed -i 's/\"A\"\,/\"A\"\, \"--root\"\,/g' /root/go/pkg/mod/github.com/d3mondev/puredns/v2@v2.0.1/pkg/massdns/runner.go
 cd /root/go/pkg/mod/github.com/d3mondev/puredns/v2@v2.0.1 && go install
 
