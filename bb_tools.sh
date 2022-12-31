@@ -152,6 +152,10 @@ git -C ~/tools/ clone https://github.com/dwisiswant0/gf-secrets
 git -C ~/tools clone https://github.com/mxrch/ghunt
 pip3 install -r ~/tools/ghunt/requirements.txt
 
+# Gitdocker
+git -C ~/tools/ clone https://github.com/obheda12/GitDorker
+pip install -r ~/tools/GitDorker/requirements.txt
+
 # Gitrecon
 git -C ~/tools clone https://github.com/GONZOsint/gitrecon.git
 cd ~/tools/gitrecon
