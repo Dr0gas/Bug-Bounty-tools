@@ -76,10 +76,16 @@ updatedb && locate -e bench-repo
 # Instalar NPM
 apt install -y npm
 
-Instalar Js-beautify
+#Instalar Js-beautify
 npm -g install js-beautify
 
 # Google Chrome
 wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O ~/tools/google-chrome-stable_current_amd64.deb
 apt-get install -f -y
 dpkg -i ~/tools/google-chrome-stable_current_amd64.deb
+
+# Atualizar sistema novamente
+apt --fix-broken install
+apt update -y
+apt upgrade -y
+apt dist-upgrade -y
