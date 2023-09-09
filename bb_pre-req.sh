@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir -p ~/tools
+
 echo "Atualização do sistema"
 apt update -y
 apt upgrade -y
@@ -58,9 +60,9 @@ apt install -y python2
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output /tmp/get-pip.py
 python2 /tmp/get-pip.py
 
-# Go 1.19.1
-wget https://go.dev/dl/go1.19.1.linux-amd64.tar.gz -O /tmp/go1.19.1.linux-amd64.tar.gz
-rm -rf /usr/local/go && tar -C /usr/local -xzf /tmp/go1.19.1.linux-amd64.tar.gz
+# Go 1.21.0
+wget https://go.dev/dl/go1.21.0.linux-amd64.tar.gz -O /tmp/go1.21.0.linux-amd64.tar.gz
+rm -rf /usr/local/go && tar -C /usr/local -xzf /tmp/go1.21.0.linux-amd64.tar.gz
 echo "export GOROOT=/usr/local/go" >> ~/.bashrc
 echo "export GOPATH=\$HOME/go" >> ~/.bashrc
 echo "export PATH=\$GOPATH/bin:\$GOROOT/bin:\$HOME/.local/bin:\$PATH" >> ~/.bashrc
@@ -76,8 +78,11 @@ updatedb && locate -e bench-repo
 # Instalar NPM
 apt install -y npm
 
-#Instalar Js-beautify
+# Instalar Js-beautify
 npm -g install js-beautify
+
+# Instalar Wget
+apt install wget -y
 
 # Google Chrome
 wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O ~/tools/google-chrome-stable_current_amd64.deb
